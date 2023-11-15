@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/professional-resume-website/static/css/main.c557a04a.css",
-    "main.js": "/professional-resume-website/static/js/main.7e73b62d.js",
+    "main.js": "/professional-resume-website/static/js/main.4ad0648a.js",
     "static/js/787.45f1f29d.chunk.js": "/professional-resume-website/static/js/787.45f1f29d.chunk.js",
     "index.html": "/professional-resume-website/index.html",
     "main.c557a04a.css.map": "/professional-resume-website/static/css/main.c557a04a.css.map",
-    "main.7e73b62d.js.map": "/professional-resume-website/static/js/main.7e73b62d.js.map",
+    "main.4ad0648a.js.map": "/professional-resume-website/static/js/main.4ad0648a.js.map",
     "787.45f1f29d.chunk.js.map": "/professional-resume-website/static/js/787.45f1f29d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c557a04a.css",
-    "static/js/main.7e73b62d.js"
+    "static/js/main.4ad0648a.js"
   ]
 }
