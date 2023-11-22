@@ -1,5 +1,11 @@
 .App {
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: left;
+  color: white;
+  max-width: 1800px;
 }
 
 .App-logo {
@@ -7,20 +13,12 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #070715fb;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: calc(8px + 1vmin);
   color: white;
 }
 
@@ -28,11 +26,144 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navLink {
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navLink:hover {
+  background-color: white;
+  color: #070715fb;
+}
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.skill-section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-top:#fffffffb 5px solid;
+}
+
+.skill-section img {
+  flex: 0 0 20%; 
+  max-height: 200px; 
+  object-fit: contain;
+  margin: 15px;
+}
+
+.skill-section .text-content {
+  flex: 1; 
+  padding: 0 15px; 
+}
+
+@media (max-width: 768px) {
+  .skill-section {
+    flex-direction: column;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .skill-section img {
+    max-width: 80%; 
+    margin-bottom: 15px;
   }
+
+  .skill-section .text-content {
+    flex: none; 
+  }
+}
+
+.portfolio-container {
+  padding: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  border: 1px solid #3d3d3d;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-content {
+  margin-top: 10px;
+}
+
+.card-wrapper {
+  transition: transform 0.3s ease;  
+  transform-origin: center;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background-color: #3d3d3d;
+  padding: 20px;
+  border-radius: 5px;
+  width: auto;
+  max-width: 80%;
+  box-shadow: 3px 3px 6px 6px rgb(255, 255, 255);
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  width: 1000px; 
+}
+
+.text-content {
+  max-width: 80%; 
+  margin: 10px;
 }

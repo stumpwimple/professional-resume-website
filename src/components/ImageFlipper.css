@@ -1,0 +1,27 @@
+.image-flipper {
+
+    position: absolute;
+    cursor: pointer;
+    width: 400px;
+    z-index: 4;
+  }
+
+  .image-flipper.board-and-card-games{
+    top: 20%;
+    right: 5%;
+  }
+  
+  .image-flipper.ttrpgs {
+    top: 20%;
+    right: 5%;
+  }
+
+  .image-flipper.bonsai {
+    top: 20%;
+    left: 5%;
+  }
+
+  .image-flipper.printing {
+    top: 20%;
+    left: 5%;
+  }

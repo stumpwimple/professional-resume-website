@@ -1,0 +1,20 @@
+.marketplace-grid {
+    display: grid;
+    grid-template-columns: 1fr 200px auto; /* Adjust as needed: Name, Price, Buttons */
+    gap: 1rem;
+    margin: 1rem;
+  }
+  
+  .marketplace-item {
+    display: contents; /* Makes the children part of the grid */
+  }
+  
+  .marketplace-name, .marketplace-price, .marketplace-actions {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd; /* For row separation */
+  }
+  
+  .marketplace-actions button {
+    margin-right: 0.5rem;
+  }
+  

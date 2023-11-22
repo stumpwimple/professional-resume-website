@@ -1,0 +1,154 @@
+.hobby-container {
+    position: relative;
+    width:1800px;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  .hobby-slice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 50%;
+    transition: clip-path 0.5s ease-in-out;
+  }
+  
+  .hobby-icon {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Adjust for center alignment */
+    width: 150px; /* Size of the icon */
+    height: 150px; /* Size of the icon */
+    transition: left 0.5s ease-in-out, top 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .hobby-slice.expanded .hobby-icon {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  
+  
+  /* Custom colors for each slice */
+.hobby-slice:nth-child(1) {
+    clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 22.2%); 
+    background-color: rgb(83, 83, 83);
+}
+.hobby-slice:nth-child(2) {
+    clip-path: polygon(50% 50%, 100% 22.2%, 100% 22.2%,  100% 100%, 68% 100%); 
+    background-color: rgb(118, 4, 4);  }
+.hobby-slice:nth-child(3) { 
+    clip-path: polygon(50% 50%, 68% 100%, 31.8% 100%, 50% 50%);  
+    background-color: rgb(139, 139, 0); }
+.hobby-slice:nth-child(4) {
+    clip-path: polygon(50% 50%, 31.8% 100%, 0% 100%, 0% 22.2%, 0% 22.2%);
+    background-color: rgb(18, 18, 245); }
+.hobby-slice:nth-child(5) { 
+    clip-path: polygon(50% 50%, 0% 22.2%, 0% 0%, 50% 0%); 
+    background-color: rgb(0, 81, 0); }
+  
+.hobby-slice:nth-child(1).expanded {
+    clip-path: polygon(31.8% 100%, 31.8% 0%, 100% 0%, 100% 55.7%);
+}
+.hobby-slice:nth-child(2).expanded {
+    clip-path: polygon(  0% 22.2%, 26.9% 0%, 100% 0%, 100% 100%,31.8% 100%); 
+}
+.hobby-slice:nth-child(3).expanded {
+    clip-path: polygon(60% 0%, 86.3% 100%, 13.6% 100%, 40% 0%); 
+}
+.hobby-slice:nth-child(4).expanded {
+    clip-path: polygon(100% 17.5%, 70% 100%, 0% 100%, 0% 0%, 73.0% 0%); 
+}
+.hobby-slice:nth-child(5).expanded {
+    clip-path: polygon(68% 100%, 0% 55.7%, 0% 0%, 68.1% 0%); 
+}
+.hobby-slice:nth-child(1) .hobby-icon {
+    left: 54%;
+    top: 41%;
+  }
+  
+  .hobby-slice:nth-child(2) .hobby-icon {
+    left: 57%;
+    top: 55%;
+  }
+  
+  .hobby-slice:nth-child(3) .hobby-icon {
+    left: 50%;
+    top: 65%;
+  }
+  
+  .hobby-slice:nth-child(4) .hobby-icon {
+    left: 43%;
+    top: 55%;
+  }
+  
+  .hobby-slice:nth-child(5) .hobby-icon {
+    left: 46%;
+    top: 41%;
+  }
+  
+  .hobby-slice.expanded .hobby-icon {
+    left: 50%;
+    top: 15%;
+  }
+
+  .hobby-title {
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0.5s ease-in-out, top 0.5s ease-in-out;
+    pointer-events: none; 
+  }
+  
+  .hobby-slice:hover .hobby-title {
+    opacity: 1;
+    font-weight: bold;
+  }
+  
+  .hobby-slice:nth-child(1) .hobby-title {
+    left: 54%;
+    top: 34%;
+  }
+  
+  .hobby-slice:nth-child(2) .hobby-title {
+    left: 60%;
+    top: 59%;
+  }
+  
+  .hobby-slice:nth-child(3) .hobby-title {
+    left: 50%;
+    top: 68%;
+  }
+  
+  .hobby-slice:nth-child(4) .hobby-title {
+    left: 41%;
+    top: 59%;
+  }
+  
+  .hobby-slice:nth-child(5) .hobby-title {
+    left: 46%;
+    top: 34%;
+  }
+  
+  .hobby-slice:hover .hobby-title {
+    opacity: 1;
+    font-weight: bold;
+  }
+
+  .hobby-slice.expanded .hobby-title {
+    left: 50%;
+    top: 22%;
+  }
+
+  .hobby-description {
+    position: absolute;
+    font-size: .8rem;
+    color: white;
+    padding: 10px;
+    left: 33%;
+    top: 25%;
+    right: 34%;
+  }
+  

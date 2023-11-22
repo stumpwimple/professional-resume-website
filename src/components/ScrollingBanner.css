@@ -1,0 +1,29 @@
+.scrolling-banner {
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+    transform: translateX(-50%);
+    width: 611%; 
+    display: flex;
+    overflow-x: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    animation: scrollBanner 20s linear infinite;
+    z-index: 4;
+  }
+  
+  .banner-image {
+    max-height: 200px;
+    margin: 5px;
+    display: inline-block;
+  }
+  
+  @keyframes scrollBanner {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
